@@ -13,4 +13,6 @@ sleep 10
 mkdir /storage/emulated/0/dataku
 touch /storage/emulated/0/dataku/regist.txt
 touch /storage/emulated/0/dataku/hasil.txt 
+chmod +x /storage/emulated/0/dataku/regist.txt
+chmod +x /storage/emulated/0/dataku/hasil.txt 
 rm -rf start
