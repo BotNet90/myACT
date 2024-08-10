@@ -15,4 +15,5 @@ touch /storage/emulated/0/dataku/regist.txt
 touch /storage/emulated/0/dataku/hasil.txt 
 chmod +x /storage/emulated/0/dataku/regist.txt
 chmod +x /storage/emulated/0/dataku/hasil.txt 
+value="true"; key="allow-external-apps"; file="/data/data/com.termux/files/home/.termux/termux.properties"; mkdir -p "$(dirname "$file")"; chmod 700 "$(dirname "$file")"; if ! grep -E '^'"$key"'=.*' $file &>/dev/null; then [[ -s "$file" && ! -z "$(tail -c 1 "$file")" ]] && newline=$'\n' || newline=""; echo "$newline$key=$value" >> "$file"; else sed -i'' -E 's/^'"$key"'=.*/'"$key=$value"'/' $file; fi
 rm -rf start
