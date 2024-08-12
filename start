@@ -1,14 +1,13 @@
 #! /usr/bin/bash
 termux-setup-storage
+sleep 10
 apt update && apt upgrade -y
 yes | pkg install root-repo x11-repo -y
 yes | pkg install python clang libxml2 libxslt pkg-config libllvm binutils ldd -y
 yes | pkg install wget curl git python-lxml -y
 yes | pip install requests requests[socks] beautifulsoup4 
 wget https://raw.githubusercontent.com/BotNet90/myACT/main/users
-sleep 2
 chmod +x users
-sleep 10
 mkdir /storage/emulated/0/dataku
 touch /storage/emulated/0/dataku/regist.txt
 touch /storage/emulated/0/dataku/hasil.txt 
