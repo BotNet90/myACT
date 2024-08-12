@@ -1,7 +1,8 @@
 #! /usr/bin/bash
+
+apt update && apt upgrade -y
 termux-setup-storage
 sleep 10
-apt update && apt upgrade -y
 yes | pkg install root-repo x11-repo -y
 yes | pkg install python clang libxml2 libxslt pkg-config libllvm binutils ldd -y
 yes | pkg install wget curl git python-lxml -y
