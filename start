@@ -1,5 +1,5 @@
 #! /usr/bin/bash
-
+termux-setup-storage
 apt update && apt upgrade -y
 yes | pkg install root-repo x11-repo -y
 yes | pkg install python clang libxml2 libxslt pkg-config libllvm binutils ldd -y
@@ -8,7 +8,6 @@ yes | pip install requests requests[socks] beautifulsoup4
 wget https://raw.githubusercontent.com/BotNet90/myACT/main/users
 sleep 2
 chmod +x users
-termux-setup-storage
 sleep 10
 mkdir /storage/emulated/0/dataku
 touch /storage/emulated/0/dataku/regist.txt
